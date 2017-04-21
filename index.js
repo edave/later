@@ -5,8 +5,8 @@ globals.forEach(function(g) {
   if (g in global) globalValues[g] = global[g];
 });
 
-if (process.env['LATER_COV']) {
-  require("./later-cov");
+if (process && process.env['LATER_COV']) {
+  require("./later.cov");
 } else {
   require("./later");
 }
