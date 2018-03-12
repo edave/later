@@ -1,5 +1,13 @@
-script: "npm test"
 language: node_js
 node_js:
-  - "0.10"
-  - "node"
+- "8.9.1"
+install:
+- npm install
+script:
+- npm run test
+notifications:
+  email:
+    recipients:
+      - kirkins@gmail.com
+    on_success: never
+on_failure: always
