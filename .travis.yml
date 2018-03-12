@@ -4,7 +4,9 @@ node_js:
 install:
 - npm install
 script:
-- npm run test
+- make clean
+- make
+- make test
 notifications:
   email:
     recipients:
